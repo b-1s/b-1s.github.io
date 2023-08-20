@@ -1,0 +1,234 @@
+body {
+    background-color: #212121;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+    font-family: 'Rajdhani', sans-serif;
+}
+main {
+    display: flex;
+}
+.game-catalogue-item {
+    height: 49.25vh;
+    width: calc(49.5vw / 2);
+    padding-left: 2%;
+    scale: 0.8;
+}
+main > div > img {
+    height: 100%;
+    border-radius: 25px;
+    transition: transform 0.5s ease-in-out;
+}
+main > div > img:hover {
+    transform: scale(1.1);
+}
+header {
+    position: fixed;
+    display: flex;
+    padding: 5px;
+    width: calc(100% - 10px);
+    height: 52px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+
+}
+#header-nav-1 {
+    transition: transform 0.25s ease-in-out;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-text-select: none;
+    -webkit-user-select: none;
+}
+#header-nav-1:active {
+    transform: translateY(5px) translateX(5px) rotate(5deg);
+}
+#title {
+    width: 100%;
+    height: 300px;
+    background-image: url("/colossal-order/src/images/CSll_City.png");
+    background-size: cover;
+    background-position-y: 25%;
+    margin: 0;
+    padding-top: 50px;
+    text-align: center;
+    text-shadow: 0px 3px 5px #000;
+}
+#title > h1 {
+    margin: 0;
+    font-size: 125px;
+}
+#title > p {
+    font-size: 30px;
+    font-weight: 600;
+}
+h1 {
+    font-size: 40px;
+    margin: 5px;
+}
+p {
+    font-size: 20px;
+}
+#about {
+    margin: 40px;
+    user-select: text;
+    -moz-user-select: text;
+    -webkit-text-select: text;
+    -webkit-user-select: text;
+    flex-grow: 3;
+}
+#beginning {
+    display: flex;
+}
+#jobs {
+    flex-grow: 1;
+    margin: 40px;
+}
+#jobs > button {
+    background-color: rgb(77, 170, 233);
+    font-size: 20px;
+    height: 35px;
+    width: 200px;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: transform 0.2s ease-in-out;
+}
+#jobs > button:active {
+    transform: scale(1.1);
+}
+.game-catalogue-item-text {
+    font-size: 25px;
+    font-weight: 500;
+}
+#news {
+    display: flex;
+}
+.news-article {
+    height: 200px;
+    border-radius: 20px;
+    width: 300px;
+    margin-left: 20px;
+}
+#news-container {
+    margin: 40px;
+}
+#article-1 {
+    background-image: url(/colossal-order/src/images/CSII_PreorderScreenshot_Population.png);
+    background-size: cover;
+}
+#article-2 {
+    background-image: url(/colossal-order/src/images/CSll_Bridge.png);
+    background-size: cover;
+}
+#article-3 {
+    background-image: url(/colossal-order/src/images/CSll_BuildingRoad.png);
+    background-size: cover;
+}
+#article-4 {
+    background-image: url(/colossal-order/src/images/CSll_CityFrogAngle.png);
+    background-size: cover;
+}
+#article-5 {
+    background-image: url(/colossal-order/src/images/CSll_Zoning.png);
+    background-size: cover;
+}
+.article-part-1 {
+    background-color: #21212175;
+    margin: 5px;
+    font-size: 20px;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 20px;
+    border: 2.5px solid #21212101;
+}
+.article-controls {
+    text-align: right;
+    margin-top: 10px;
+    width: calc(100% - 10px);
+}
+.article-controls > button {
+    background-color: rgb(77, 170, 233);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Rajdhani', sans-serif;
+    padding: 5px;
+    width: 35px;
+    font-weight: 600;
+    transition: transform 0.2s ease-in-out;
+}
+.article-controls > button:active {
+    transform: scale(1.1);
+}
+.elipsis-button {
+    transition: none;
+}
+#news-container > h2 {
+    margin-left: 25px;
+}
+a {
+    color: rgb(77, 170, 233);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(0, 102, 170);
+    text-decoration: none;
+}
+footer {
+    text-align: center;
+}
+footer > p {
+    font-size: 15px;
+    background-color: #2f2f2f;
+    height: 25px;
+    padding-top: 5px;
+    margin: 10px;
+    border-radius: 20px;
+}
+#mobile-jobs {
+    display: none;
+}
+#mobile-jobs-title {
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    #jobs {
+        display: none;
+    }
+    #mobile-jobs {
+        display: flex;
+        flex-grow: 1;
+        margin: 40px;
+    }
+    #mobile-jobs > button {
+        background-color: rgb(77, 170, 233);
+        font-size: 20px;
+        height: auto;
+        width: 200px;
+        color: #fff;
+        font-family: 'Rajdhani', sans-serif;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        font-weight: 600;
+        transition: transform 0.2s ease-in-out;
+    }
+    #mobile-jobs > button:active {
+        transform: scale(1.1);
+    }
+    #mobile-jobs-title {
+        display: flex;
+        padding-left: 40px;
+    }
+    #gamedevstudio {
+        display: none;
+    }
+}
