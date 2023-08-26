@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="src/js/tests.js" defer></script>
+
+    <style>
+        #searchbar{
+            margin-left: 15%;
+            padding:15px;
+            border-radius: 10px;
+        }
+        
+        input[type=text] {
+            width: 30%;
+            -webkit-transition: width 0.15s ease-in-out;
+            transition: width 0.15s ease-in-out;
+        }
+        input[type=text]:focus {
+            width: 70%;
+        }
+        
+        #list{
+            font-size:  1.5em;
+            margin-left: 90px;
+        }
+        
+        .animals{
+            display: list-item;    
+        } 
+    </style>
+</head>
+<body>
+    <input type="text" name="searchbar" id="searchbar" placeholder="Search Animals...">
+    <p id="searchquery"></p>
+    <ol id='list'>
+        <li class="animals">Why is my computer on?</li>
+        <li class="animals">Why is my computer off?</li>
+        <li class="animals">Who Licked My toes?</li>
+        <li class="animals">hello</li>
+        <li class="animals">LINCOLN ALBRECHT</li>
+        <li class="animals">Why is my computer on 2 electric boogaloo?</li>
+        <li class="animals">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quidem error fuga deserunt soluta aliquam aspernatur inventore assumenda, aliquid autem! Nesciunt necessitatibus nam saepe nostrum aut itaque commodi dicta quaerat?</li>
+        <li class="animals">Hello</li>
+        <li class="animals">baf</li>
+        <li class="animals">trys</li>
+        <li class="animals">gsdfger</li>
+    </ol>
+</body>
+</html>

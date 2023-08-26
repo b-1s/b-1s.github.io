@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia</title>
+    <link rel="stylesheet" href="src/css/wikipedia.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2172e4ad38.js" crossorigin="anonymous"></script>
+    <script src="src/js/wikipedia.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="wikipedia.html">
+            <i class="fa-brands fa-wikipedia-w"></i>
+        </a>
+        <div id="header-search">
+            <input type="search" name="header-search-bar" id="header-search-bar" placeholder="Search anything...">
+        </div>
+        <div id="icons">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun" onclick="lightMode()"></i>
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </header>
+    <div id="header-search-items">
+        <p class="header-search-item">A</p>
+        <p class="header-search-item">B</p>
+        <p class="header-search-item">C</p>
+        <p class="header-search-item">D</p>
+        <p class="header-search-item">E</p>
+        <p class="header-search-item">F</p>
+        <p class="header-search-item">G</p>
+        <p class="header-search-item">H</p>
+        <p class="header-search-item">I</p>
+    </div>
+    <main>
+        <aside>
+            <br>
+            <br>
+            <br>
+            aside
+        </aside>
+        <section>
+            <div id="main-nav">
+                &nbsp;
+            </div>
+            <div id="welcome">
+            </div>
+            <div class="welcome-gradient"></div>
+            <div class="blur-welcome-gradient"></div>
+            <h1 class="welcome-text">
+                <i class="fa-brands fa-wikipedia-w"></i>ikipedia
+            </h1>
+            <div id="info">
+                <article id="info-part-1" class="info-part">
+                    <b>Today's Featured Article</b>
+                    <p>
+                        Something about Frank Baldin (hes bald). Anyways, Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam 
+                        fugiat similique iste! Error vitae repellendus ab, nemo consectetur eos maxime architecto fugit quas inventore a? 
+                        Repudiandae fugit numquam placeat recusandae.
+                    </p>
+                </article>
+                <article id="info-part-2" class="info-part">
+                    <b>In the News</b>
+                </article>
+                <article id="info-part-3" class="info-part">
+                    <b>Did you know...</b>
+                </article>
+                <article id="info-part-4" class="info-part">
+                    <b>On this day</b>
+                </article>
+                <article id="info-part-5" class="info-part">
+                    <b>Today's featured picture</b>
+                </article>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
